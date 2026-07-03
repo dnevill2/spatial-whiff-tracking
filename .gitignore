@@ -1,0 +1,13 @@
+# Ignore SQLite and database files
+*.sqlite
+*.db
+*.parquet
+
+# Ignore R-specific environment files
+.Rhistory
+.RData
+.Ruserdata
+.Rproj.user/
+
+# Ignore large data folders if you make them
+/data/
