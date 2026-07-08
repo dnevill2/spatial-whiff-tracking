@@ -9,5 +9,9 @@
 .Ruserdata
 .Rproj.user/
 
+# Ignore all trained models and data frames (anywhere in the project)
+*.rds
+outputs/*.rds
+
 # Ignore large data folders if you make them
 /data/
