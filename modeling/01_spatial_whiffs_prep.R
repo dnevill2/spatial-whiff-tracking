@@ -37,7 +37,7 @@ spatial_whiff_df <- raw_data %>%
     # Create our binary target: 1 = Whiff, 0 = Contact
     is_whiff = if_else(description %in% whiff_descriptions, 1, 0),
   ) %>%
-  select(game_pk, pitch_type, p_throws, stand, plate_x, plate_z, is_whiff)
+  select(game_pk, batter, pitch_type, p_throws, stand, plate_x, plate_z, is_whiff)
 
 # 3. Spatial Density & Whiff Baseline Report
 message("--- Baseline Whiff Rates by Pitch Type ---")
